@@ -34,7 +34,7 @@ if (s.blerepl===false) { // If not programmable, force terminal off Bluetooth
 // Don't disconnect if something is already connected to us
 if (s.ble===false && !NRF.getSecurityStatus().connected) NRF.sleep();
 
-NRF.setTXPower(4);
+NRF.setTxPower(4);
 
 // Set time, vibrate, beep, etc
 if (!Bangle.F_BEEPSET) {
